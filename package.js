@@ -1,6 +1,6 @@
 Package.describe({
     name: 'wanchopeblanco:shopping-cart',
-    version: '0.0.1',
+    version: '0.0.2',
     summary: 'A simple shopping cart with all basic features. Fork of Meteor Cart',
     git: 'https://github.com/wanchopeblanco/shopping-cart.git',
     documentation: 'README.md'
