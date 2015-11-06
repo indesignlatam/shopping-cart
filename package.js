@@ -1,8 +1,8 @@
 Package.describe({
     name: 'wanchopeblanco:shopping-cart',
     version: '0.0.1',
-    summary: 'A simple shopping cart with all basic features, Fork of Meteor Cart with some adittions (Removed Stripe)',
-    git: '',
+    summary: 'A simple shopping cart with all basic features. Fork of Meteor Cart',
+    git: 'https://github.com/wanchopeblanco/shopping-cart.git',
     documentation: 'README.md'
 });
 
