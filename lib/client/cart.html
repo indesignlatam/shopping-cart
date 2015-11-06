@@ -1,0 +1,47 @@
+<template name="CartSummary">
+	{{itemCount}} items
+	<br>
+	Total ${{itemTotal}}
+	{{#if itemsInCart}}
+		<br>
+		<a href="{{pathFor 'cart'}}">View Cart</a>
+		<br>
+		{{>CartPayNow}}
+	{{/if}}
+</template>
+
+<template name="CartAddItemButton">
+	<button class="add-item">Add To Cart</button>
+</template>
+
+<template name="CartPayNow">
+	<button id="pay-now">Pay Now</button>
+</template>
+
+<template name="CartItems">
+	{{#if hasItems}}
+		{{itemCount}} items
+		<br>
+		Total ${{itemTotal}}
+		<br>
+		{{>CartPayNow}}
+		<br>
+		<hr>
+		<br>
+		{{#each items}}
+			{{>CartItem}}
+		{{/each}}
+	{{else}}
+		No items in cart!
+	{{/if}}
+</template>
+
+<template name="CartItem">
+	<div>
+		{{name}} - {{price}}
+		<br>
+		<a href="#" class="remove">Remove</a>
+	</div>
+	<hr>
+	<br><br><br>
+</template>
