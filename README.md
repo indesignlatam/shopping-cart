@@ -1,11 +1,7 @@
 cart
 ===========
 
-A simple shopping cart package for meteorjs that uses stripe for payments
-
-Run the example app with `meteor --settings settings.json` - settings are needed for stripe api keys
-
-Live demo at http://cartdemo.meteor.com
+A simple shopping cart package for meteor.js
 
 
 ------
@@ -30,13 +26,13 @@ eg:
 not logged in
 item = 
 {
-deviceId:"XXXX"
+	deviceId:"XXXX"
 }
 
 logged in
 item 
 {
-userId:"XXXX"
+	userId:"XXXX"
 }
 
 when a user logs in, any items that have a matching deviceId but no userId have the deviceId removed and and a userId added
@@ -44,11 +40,4 @@ when a user logs in, any items that have a matching deviceId but no userId have 
 
 
 
-TODO:
-using accounting.js to format money
-callback for what to do after payment
-option to adjust what to do with items after payemnt (instead of just delete)
-add cart preview route
-adjust quantity
-remove items from cart
-bootstrap styling by default
+

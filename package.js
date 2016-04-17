@@ -1,7 +1,7 @@
 Package.describe({
-    name: 'wanchopeblanco:shopping-cart',
-    version: '0.0.2',
-    summary: 'A simple shopping cart with all basic features. Fork of Meteor Cart',
+    name: 'indesign:shopping-cart',
+    version: '0.0.3',
+    summary: 'A simple shopping cart Barebones with all basic features. Fork of Meteor Cart',
     git: 'https://github.com/wanchopeblanco/shopping-cart.git',
     documentation: 'README.md'
 });
@@ -11,7 +11,6 @@ Package.onUse(function(api) {
 
     api.use([
         'tracker@1.0.3',
-        'templating',
         'session',
         'amplify'
         ]
@@ -22,7 +21,7 @@ Package.onUse(function(api) {
         ], ['server','client']);
 
     api.add_files(['lib/both/environment.js'], ['client','server']);
-    api.add_files(['lib/client/cart.html','lib/client/cart.js'], 'client');
+    api.add_files(['lib/client/cart.js'], 'client');
     api.add_files(['lib/server/publications.js'], 'server');
 
     api.export('Cart', ['client','server']);
