@@ -1,7 +1,7 @@
 /*global Package:true*/
 
 Package.describe({
-	name: 'indesign:basket',
+	name: 'indesign:shopping-cart',
 	version: '0.0.5',
 	summary: 'A simple shopping cart Barebones with all basic features. Fork of Meteor Cart',
 	git: 'https://github.com/wanchopeblanco/shopping-cart.git',
@@ -14,7 +14,7 @@ Package.onUse(function(api) {
 	api.use([
 		'tracker',
 		'reactive-var',
-		'amplify'
+		'amplify@1.0.0'
 	], 'client');
 
 	api.use([
@@ -23,8 +23,8 @@ Package.onUse(function(api) {
 		'underscore',
 		'ecmascript',
 		'accounts-base',
-		'aldeed:simple-schema',
-		'aldeed:collection2'
+		'aldeed:simple-schema@1.5.3',
+		'aldeed:collection2@2.9.1'
 	], ['server','client']);
 
 
