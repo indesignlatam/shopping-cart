@@ -1,11 +1,11 @@
 /*global Package:true*/
 
 Package.describe({
-    name: 'indesign:shopping-cart',
-    version: '0.0.3',
-    summary: 'A simple shopping cart Barebones with all basic features. Fork of Meteor Cart',
-    git: 'https://github.com/wanchopeblanco/shopping-cart.git',
-    documentation: 'README.md'
+	name: 'indesign:basket',
+	version: '0.0.5',
+	summary: 'A simple shopping cart Barebones with all basic features. Fork of Meteor Cart',
+	git: 'https://github.com/wanchopeblanco/shopping-cart.git',
+	documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
