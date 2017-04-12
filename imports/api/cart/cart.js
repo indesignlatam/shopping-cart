@@ -81,7 +81,7 @@ Cart.Items.basicFields = {
  *
  */
 Cart.Items.helpers({
-	helper() {
+    helper: () => {
 		return '';
 	}
 });
